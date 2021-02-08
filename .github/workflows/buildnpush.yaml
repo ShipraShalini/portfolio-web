@@ -19,4 +19,4 @@ jobs:
           aws-region: "us-east-1"
       - name: Deploy app build to S3 bucket
 #        if: github.ref == 'refs/heads/main'
-        run: aws s3 sync ./dist/ s3://shiprashalini.com --delete
+        run: aws s3 sync ./build s3://shiprashalini.com --delete
